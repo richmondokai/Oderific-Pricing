@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orderific Pricing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 50px;
+      box-shadow: 0 2px 10px rgba(206, 199, 199, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 50px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 400;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #FF5722;
+    }
+
+    .dashboard-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #FF5722;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .flag {
+      width: 5px;
+      height: 5px;
+      border-radius: 3px;
+    }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gradient);
+            margin: 0;
+            color: var(--dark-color);
+            text-align: center;
+        }
+
+        header {
+            padding: 1.5rem 0;
+            background: rgb(255, 255, 255);
+            color: var(--light-color);
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: var(--light-color);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .pricing-section {
+            padding: 40px 20px;
+            background: #ffffff;
+        }
+        .pricing-title {
+            font-size: 60px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+        .pricing-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF5733; /* Orange */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+        }
+        .pricing-subtext {
+    font-size: 18px;
+    color: #666;
+        }
+        .pricing-title .highlight {
+    color: #FF5733; /* Same orange highlight */
+}
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .pricing-card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 470px;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+       
+        .pricing-card img {
+            width: 20px;
+            margin-bottom: 1px;
+        }
+        .plan-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #9c9c9c;
+            margin-bottom: 10px;
+            
+        }
+        .plan-price {
+            font-size: 24px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        .plan-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .plan-features li {
+            margin: 5px 0;
+            color: #ec5200;
+        }
+        .cta-button {
+            background: #ff5722;
+            color: #ffffff;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        .cta-button:hover {
+            background: #e64a19;
+        }
+        .highlight-badge {
+            position: absolute;
+            top: 390px;
+            left: 10px;
+            background: #ffebeb;
+            color: #ff5722;
+            padding: 50px 15px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .faq-section {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .faq-answer {
+            font-size: 16px;
+            color: #555;
+            display: none;
+            margin-top: 10px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .footer {
+            background: #fff;
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-section {
+            text-align: left;
+            max-width: 400px;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .download-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 10px;
+      background-color: #FF5722; /* Orange Color */
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn i {
+      font-size: 20px;
+    }
+
+    .btn:hover {
+      background-color: #E64A19; /* Darker Orange */
+    }
+        .footer-bottom {
+            margin-top: 20px;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            min-width: 150px;
+            text-align: left;
+        }
+        .column h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .column ul li {
+            margin-bottom: 5px;
+        }
+        .column ul li a {
+            text-decoration: none;
+            color: #555;
+            transition: 0.3s;
+        }
+        .column ul li a:hover {
+            color: #FF5722;
+        }
+        .contact p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+        .footer {
+    width: 100%;
+    background-color: #fff; /* White background */
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #2c2c2c; /* Darker gray for better readability */
+    border-top: 1px solid #e0e0e0; /* Subtle top border */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <img src="image.png" alt="Orderific Logo">
+          Orderific
+        </div>
+        
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a href="#">Solution</a>
+          <a href="#">Industries</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+        </nav>
+      
+        <div class="dashboard-btn">
+          <img src="gh.jpg" alt="Ghana Flag">
+          Open Dashboard
+        </div>
+    </header>   
+
+    <section class="pricing-section">
+        <div class="highlight-badge">No Setup Fee<br>or<br>Binding Contracts</div>
+        <p class="pricing-label">PRICING</p>
+    <h1 class="pricing-title">
+        Plans for restaurants <br> of all <span class="highlight">sizes</span>
+    </h1>
+    <p class="pricing-subtext">
+        Explore Our Cost-Effective Plans Tailored to Scale Your Business
+    </p> <br> <br>
+        <div class="pricing-container">
+            <!-- Full/Pro Plan -->
+            <div class="pricing-card">
+    
+                <h2 class="plan-name"><b>Full/Pro Plan</b></h2>
+                <p class="plan-price"><b>$99/month</b></p>
+                <p><i>Become a culinary sensation with Orderific's Full Plan at just 99$/month.</i></p>
+                <a href="#" class="cta-button">Get Started</a>
+                <ul class="plan-features">
+                    <li><img src="correct.jpg" alt="Digital Smart Menu Icon"><b>Digital Smart Menu</b></li>
+                    <li><img src="correct.jpg" alt="Loyalty Program Icon"><b>Loyalty Program</b></li>
+                    <li><img src="correct.jpg" alt="Business Analytics Icon"><b>Business Analytics</b></li>
+                    <li><img src="correct.jpg" alt="Website Builder Icon"><b>Website Builder</b></li>
+                    <li><img src="correct.jpg" alt="Payment Integration Icon"><b>Payment Integration</b></li>
+                    <li><img src="correct.jpg" alt="Delivery System Setup Icon"><b>Delivery System Setup</b></li>
+                    <li><img src="correct.jpg" alt="Marketing Tools Icon"><b>Marketing Tools</b></li>
+                    <li><img src="correct.jpg" alt="Menu Translation Icon"><b>Menu Translation</b></li>
+                    <li><img src="correct.jpg" alt="Clear Reporting Icon"><b>Clear Reporting</b></li>
+                    <li><img src="correct.jpg" alt="POS Integration Icon"><b>Seamless POS Integration</b></li>
+                </ul>
+                <div style="text-align: right;">
+                        ...and so much more!
+                    </div>
+                <p><br><b>Ideal for Visionary Restaurateurs:</b></p>
+                <p><br>Choose this plan to elevate your dining experience and set your restaurant apart. Ideal for combining technology and insights to grow your business.</p>
+
+            </div>
+
+            <!-- Complimentary Plan -->
+            <div class="pricing-card">
+            
+                <h2 class="plan-name"><b>Complimentary Plan</b></h2>
+                <p class="plan-price"><b>$0/month</b></p>
+                <p><i>Experience premium services at zero cost with Orderific's Complimentary Plan by offering price guarantee.</i></p>
+                <a href="#" class="cta-button">Get Started</a>
+                <ul class="plan-features">
+                    <li><img src="correct.jpg" alt="All Features Icon"><b>Access ALL Features</b></li>
+                    <li><img src="correct.jpg" alt="Zero Cost Icon"><b>Zero Cost</b></li>
+                    <li><img src="correct.jpg" alt="Best Prices Icon"><b>Commitment to Best Prices</b></li>
+                
+            
+                </ul>
+                <p><br><b>Perfect for Value-Focused Eateries:</b></p>
+                <p><br>If your restaurant is all about great deals and top-notch quality, this plan is perfect for you. It's more than just cost-saving - it's about building a community of happy, loyal customers who appreciate your dedication to affordability and excellence.</p>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">What is the cost of the Full Plan? <span>+</span></div>
+            <div class="faq-answer">The Full Plan costs $99 per month and provides access to all premium features.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Does the Full Plan have any limitations on the number of tables or guests? <span>+</span></div>
+            <div class="faq-answer">No, the Full Plan allows unlimited tables and guests.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I manage reservations with the Full Plan? <span>+</span></div>
+            <div class="faq-answer">Yes, the Full Plan includes a reservation management system.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Is there a Customer Loyalty Program included in the Full Plan? <span>+</span></div>
+            <div class="faq-answer">Yes, the Full Plan includes a built-in loyalty program.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Does the Full Plan offer analytics? <span>+</span></div>
+            <div class="faq-answer">Yes, you get detailed analytics and insights for your business.</div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+<body>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="image.png" alt="Orderific Logo">
+                        Orderific
+                      </div>
+                    <p class="tagline">Revolutionize your restaurant's operations - Simplify, streamline, and soar with Orderific! Download the app now for an unrivalled culinary journey!</p>
+                </div>
+                <div class="download-buttons">
+                    <button class="btn ios"><i class="fab fa-apple"></i> DOWNLOAD FOR iOS</button>
+                    <button class="btn android"><i class="fab fa-android"></i> DOWNLOAD FOR ANDROID</button>
+                  </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <div class="column">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Features</h4>
+                        <ul>
+                            <li><a href="#">Smart Menu</a></li>
+                            <li><a href="#">Customer Relations</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Plans</h4>
+                        <ul>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Registration</a></li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Industries</h4>
+                        <ul>
+                            <li><a href="#">Cafe Management Software</a></li>
+                            <li><a href="#">Juice Bar Software</a></li>
+                            <li><a href="#">Event Management Software</a></li>
+                            <li><a href="#">Food Truck Management Software</a></li>
+                            <li><a href="#">Night Club Management Software</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Policy</h4>
+                        <ul>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Delivery Policy</a></li>
+                            <li><a href="#">Cancellation & Refunds</a></li>
+                        </ul>
+                    </div>
+                    <div class="column contact">
+                        <h4>Contact Sales:</h4>
+                        <ul>
+                            <li><a href="#">+1 917 636 5868</a></li>
+                        </ul>
+                        <h4>Contact Email:</h4>
+                        <ul>
+                            <li><a href="#">support@orderific.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Orderific All rights reserved</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
