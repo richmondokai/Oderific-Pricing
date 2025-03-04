@@ -65,7 +65,7 @@
     }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter';
             background: var(--gradient);
             margin: 0;
             color: var(--dark-color);
@@ -114,7 +114,7 @@
         }
         .pricing-title {
             font-size: 60px;
-            color: #333;
+            color: #000000;
             margin-bottom: 40px;
             font-weight: 600;
         }
@@ -150,8 +150,65 @@
         }
        
         .pricing-card img {
-            width: 20px;
+            width: 50px;
             margin-bottom: 1px;
+        }
+        .pricing-header {
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #555;
+        }
+        .icon {
+    font-size: 24px;
+        }
+        .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin: 1px 0;
+        }
+        .keyhead {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    margin: 10px 0;
+        }
+        .description {
+    color: #777;
+    font-size: 14px;
+    margin: 10px 0 20px;
+         }
+         .link {
+    color: #0099ff;
+    text-decoration: none;
+         }
+
+    .link:hover {
+    text-decoration: underline;
+          }
+
+    .feature-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+       }
+    .feature-list li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin: 5px 0;
+         } 
+        .checkmark {
+    font-size: 24px;
+    color: #ff5722;
         }
         .plan-name {
             font-size: 20px;
@@ -174,20 +231,23 @@
             margin: 5px 0;
             color: #ec5200;
         }
-        .cta-button {
-            background: #ff5722;
-            color: #ffffff;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 30px;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 15px;
-        }
-        .cta-button:hover {
-            background: #e64a19;
-        }
+        .btn {
+    background-color: #ff5722;  /* Orange background */
+    color: white;               /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;               /* Removes border */
+    outline: none;              /* Removes focus outline */
+    padding: 12px 24px;
+    border-radius: 25px;        /* Rounded edges */
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: none;           /* Removes any shadow */
+}
+
+    .btn:hover {
+    background-color: #e64a19;
+}
         .highlight-badge {
             position: absolute;
             top: 390px;
@@ -279,31 +339,6 @@
       display: flex;
       gap: 20px;
       justify-content: center;
-    }
-
-    .btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 14px 30px;
-      border: none;
-      border-radius: 10px;
-      background-color: #FF5722; /* Orange Color */
-      color: #fff;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .btn i {
-      font-size: 20px;
-    }
-
-    .btn:hover {
-      background-color: #E64A19; /* Darker Orange */
     }
         .footer-bottom {
             margin-top: 20px;
@@ -397,26 +432,35 @@
     <p class="pricing-subtext">
         Explore Our Cost-Effective Plans Tailored to Scale Your Business
     </p> <br> <br>
-        <div class="pricing-container">
-            <!-- Full/Pro Plan -->
-            <div class="pricing-card">
-    
-                <h2 class="plan-name"><b>Full/Pro Plan</b></h2>
-                <p class="plan-price"><b>$99/month</b></p>
-                <p><i>Become a culinary sensation with Orderific's Full Plan at just 99$/month.</i></p>
-                <a href="#" class="cta-button">Get Started</a>
-                <ul class="plan-features">
-                    <li><img src="correct.jpg" alt="Digital Smart Menu Icon"><b>Digital Smart Menu</b></li>
-                    <li><img src="correct.jpg" alt="Loyalty Program Icon"><b>Loyalty Program</b></li>
-                    <li><img src="correct.jpg" alt="Business Analytics Icon"><b>Business Analytics</b></li>
-                    <li><img src="correct.jpg" alt="Website Builder Icon"><b>Website Builder</b></li>
-                    <li><img src="correct.jpg" alt="Payment Integration Icon"><b>Payment Integration</b></li>
-                    <li><img src="correct.jpg" alt="Delivery System Setup Icon"><b>Delivery System Setup</b></li>
-                    <li><img src="correct.jpg" alt="Marketing Tools Icon"><b>Marketing Tools</b></li>
-                    <li><img src="correct.jpg" alt="Menu Translation Icon"><b>Menu Translation</b></li>
-                    <li><img src="correct.jpg" alt="Clear Reporting Icon"><b>Clear Reporting</b></li>
-                    <li><img src="correct.jpg" alt="POS Integration Icon"><b>Seamless POS Integration</b></li>
+    <div class="pricing-container">
+        <!-- Full/Pro Plan -->
+        <div class="pricing-card">
+            <div class="pricing-header">
+                <img src="dollar.jpg" alt="Pro Plan">
+                <h3>Full/Pro Plan</h3>
+            </div>
+            <h2 class="price">$99/month</h2>
+            <p class="description">
+                Become a culinary sensation with Orderific's Full Plan at just $99/month.
+            </p>
+
+            <button class="btn">Get Started</button>
+
+            <p class="keyhead"><br> Key Features:</p><br>
+            <div class="feature-list">
+                <ul>
+                    <li><span class="checkmark">✔</span> Digital Smart Menu</li>
+                    <li><span class="checkmark">✔</span> Loyalty Program</li>
+                    <li><span class="checkmark">✔</span> Business Analytics</li>
+                    <li><span class="checkmark">✔</span> Website Builder</li>
+                    <li><span class="checkmark">✔</span> Payment Integration</li>
+                    <li><span class="checkmark">✔</span> Delivery System Setup</li>
+                    <li><span class="checkmark">✔</span> Marketing Tools</li>
+                    <li><span class="checkmark">✔</span> Menu Translation</li>
+                    <li><span class="checkmark">✔</span> Clear Reporting</li>
+                    <li><span class="checkmark">✔</span> Seamless POS Integration</li>
                 </ul>
+                </div>
                 <div style="text-align: right;">
                         ...and so much more!
                     </div>
@@ -426,18 +470,25 @@
             </div>
 
             <!-- Complimentary Plan -->
-            <div class="pricing-card">
+        <div class="pricing-card">
+            <div class="pricing-header">
+                <img src="hands.jpg" alt="Complimentary Plan">
+                <h3>Complimentary Plan</h3>
+            </div>
+            <h2 class="price">$0/month</h2>
+            <p class="description">
+                Experience premium services at zero cost with Orderific's Complimentary Plan by offering price 
+                <a href="#" class="link">guarantee.</a>
+            </p>
+            <button class="btn">Get Started</button>
+
+            <p class="keyhead"><br> Key Features:</p><br>
             
-                <h2 class="plan-name"><b>Complimentary Plan</b></h2>
-                <p class="plan-price"><b>$0/month</b></p>
-                <p><i>Experience premium services at zero cost with Orderific's Complimentary Plan by offering price guarantee.</i></p>
-                <a href="#" class="cta-button">Get Started</a>
-                <ul class="plan-features">
-                    <li><img src="correct.jpg" alt="All Features Icon"><b>Access ALL Features</b></li>
-                    <li><img src="correct.jpg" alt="Zero Cost Icon"><b>Zero Cost</b></li>
-                    <li><img src="correct.jpg" alt="Best Prices Icon"><b>Commitment to Best Prices</b></li>
-                
-            
+            <div class="feature-list">
+                <ul>
+                    <li><span class="checkmark">✔</span> Access ALL Features</li>
+                    <li><span class="checkmark">✔</span> Zero Cost</li>
+                    <li><span class="checkmark">✔</span> Commitment to Best Prices</li>
                 </ul>
                 <p><br><b>Perfect for Value-Focused Eateries:</b></p>
                 <p><br>If your restaurant is all about great deals and top-notch quality, this plan is perfect for you. It's more than just cost-saving - it's about building a community of happy, loyal customers who appreciate your dedication to affordability and excellence.</p>
